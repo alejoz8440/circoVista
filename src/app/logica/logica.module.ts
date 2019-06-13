@@ -11,14 +11,16 @@ import { SharedModule } from '../shared/shared.module';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { MaterialModule } from '../material/material.module';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [TipoClienteComponent, ClienteComponent, DulceriaComponent, EmpleadoComponent, EspectaculoComponent, TaquillaComponent, LoginComponent, UsuarioComponent],
+  declarations: [TipoClienteComponent, ClienteComponent, DulceriaComponent, EmpleadoComponent, EspectaculoComponent, TaquillaComponent, LoginComponent, UsuarioComponent, HomeComponent],
   imports: [
     CommonModule,
     SharedModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    
   ],
   exports:[LoginComponent]
 })
