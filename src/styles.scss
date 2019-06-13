@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+.header {
+    border: 2px solid gray;
+    background: rgba(228, 18, 18, 0.842);
+    color: white;
+    text-align: center;
+    min-height: 15%;
+    .logo {
+        position: relative;
+        left: -30%;
+        bottom: -120%;
+        height: 120px;
+    }
+    .title {
+        position: absolute;
+        top: 0%;
+        bottom: 10%;
+        left: 0%;
+        right: 0%;
+    }
+}
+
+.Container {
+    height: 100%;
+}
+
+html,
+body {
+    height: 97%;
+}
+
+body {
+    margin: 0, 5;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.example-container {
+    position: relative;
+    height: 79vh;
+    border: 1px solid gray;
+    .side {
+        background-color: rgb(194, 70, 70);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,14 @@
+<div fxLayout="column">
+
+  <mat-sidenav-container  class="example-container" fxFlex="100" (backdropClick)="sidenav.close('backdrop') ">
+    
+      <mat-sidenav class="side" #sidenav (keydown.escape)="sidenav.close()" disableClose>
+        <p><button mat-button (click)="sidenav.close()">Atras</button></p>
+      </mat-sidenav>
+
+      <mat-sidenav-content class="navContent">
+        <p><button mat-button (click)="sidenav.open()">Menu</button></p>
+      </mat-sidenav-content>
+    
+  </mat-sidenav-container>
+</div>
