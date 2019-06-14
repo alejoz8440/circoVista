@@ -1,4 +1,19 @@
-<div class="header">
+<div>
     <img class="logo" src="../../../assets/image/Logo.png">
     <h1 class="title">Circo Seminario Angular</h1>
+
+
+    <div>
+        <button mat-button="menu" routerLink="home">Home</button>
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Empleado</button>
+            <button mat-menu-item>Cliente</button>
+            <button mat-menu-item>Dulceria</button>
+            <button mat-menu-item>Espectaculo</button>
+            <button mat-menu-item>Taquilla</button>
+            <button mat-menu-item>Tipo Cliente</button>
+        </mat-menu>
+
+    </div>
 </div>

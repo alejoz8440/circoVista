@@ -6,25 +6,25 @@
     background: rgba(228, 18, 18, 0.842);
     color: white;
     text-align: center;
-    min-height: 15%;
+    min-height: 20%;
     .logo {
         position: relative;
-        left: -30%;
-        bottom: -120%;
-        height: 120px;
-    }
-    .title {
-        position: absolute;
-        top: 0%;
-        bottom: 10%;
         left: 0%;
-        right: 0%;
+        top: 0%;
+        height: 70%;
+    }
+    #title {
+        position: relative;
+        left: 0%;
+        top: 0%;
     }
 }
 
 .Container {
     height: 100%;
 }
+
+#Content {}
 
 html,
 body {
@@ -50,7 +50,6 @@ body {
     height: 100%;
 }
 
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+#home {
+    height: auto;
 }

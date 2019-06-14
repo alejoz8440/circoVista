@@ -6,7 +6,6 @@ import { DulceriaComponent } from './dulceria/dulceria.component';
 import { EmpleadoComponent } from './empleado/empleado.component';
 import { EspectaculoComponent } from './espectaculo/espectaculo.component';
 import { TaquillaComponent } from './taquilla/taquilla.component';
-import { LoginComponent } from './login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { MaterialModule } from '../material/material.module';
@@ -14,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [TipoClienteComponent, ClienteComponent, DulceriaComponent, EmpleadoComponent, EspectaculoComponent, TaquillaComponent, LoginComponent, UsuarioComponent, HomeComponent],
+  declarations: [TipoClienteComponent, ClienteComponent, DulceriaComponent, EmpleadoComponent, EspectaculoComponent, TaquillaComponent, UsuarioComponent, HomeComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -22,6 +21,6 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     
   ],
-  exports:[LoginComponent]
+  exports:[]
 })
 export class LogicaModule { }

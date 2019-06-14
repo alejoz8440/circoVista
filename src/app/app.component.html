@@ -1,11 +1,28 @@
 <div class="Container" fxFlexFill fxLayout="column">
-    <app-header fxFlex="15"></app-header>
+    <div class="header" fxFlex="30">
 
-    <app-sidenav></app-sidenav>
+        <img class="logo" src="../../../assets/image/Logo.png">
 
-</div>
+        <div class="title">Circo Seminario Angular</div>
 
-<div>
-    <router-outlet></router-outlet>
+        <div>
+            <button mat-button routerLink="home">Home</button>
+            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="empleado">Empleado</button>
+                <button mat-menu-item routerLink="cliente">Cliente</button>
+                <button mat-menu-item routerLink="dulceria">Dulceria</button>
+                <button mat-menu-item routerLink="espectaculo">Espectaculo</button>
+                <button mat-menu-item routerLink="taquilla">Taquilla</button>
+                <button mat-menu-item routerLink="tipocliente">Tipo Cliente</button>
+            </mat-menu>
+
+        </div>
+    </div>
+
+    <section id="main" fxFlex="70">
+
+        <router-outlet></router-outlet>
+    </section>
 
 </div>
