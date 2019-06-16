@@ -1,28 +1,26 @@
 <div class="Container" fxFlexFill fxLayout="column">
     <div class="header" fxFlex="30">
 
-        <img class="logo" src="../../../assets/image/Logo.png">
+        <img class="banner" src="../../../assets/image/Banner.jpg">
 
-        <div class="title">Circo Seminario Angular</div>
+    </div>
+    <div class="Menu" fxFlex="6">
+        <button mat-button routerLink="home">Home</button>
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="empleado">Empleado</button>
+            <button mat-menu-item routerLink="cliente">Cliente</button>
+            <button mat-menu-item routerLink="dulceria">Dulceria</button>
+            <button mat-menu-item routerLink="espectaculo">Espectaculo</button>
+            <button mat-menu-item routerLink="taquilla">Taquilla</button>
+            <button mat-menu-item routerLink="tipocliente">Tipo Cliente</button>
+        </mat-menu>
 
-        <div>
-            <button mat-button routerLink="home">Home</button>
-            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item routerLink="empleado">Empleado</button>
-                <button mat-menu-item routerLink="cliente">Cliente</button>
-                <button mat-menu-item routerLink="dulceria">Dulceria</button>
-                <button mat-menu-item routerLink="espectaculo">Espectaculo</button>
-                <button mat-menu-item routerLink="taquilla">Taquilla</button>
-                <button mat-menu-item routerLink="tipocliente">Tipo Cliente</button>
-            </mat-menu>
-
-        </div>
     </div>
 
-    <section id="main" fxFlex="70">
-
-        <router-outlet></router-outlet>
-    </section>
-
+    <div fxLayout="column">
+        <section id="main" fxflex="64">
+            <router-outlet></router-outlet>
+        </section>
+    </div>
 </div>

@@ -3,28 +3,26 @@
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 .header {
     border: 2px solid gray;
-    background: rgba(228, 18, 18, 0.842);
+    border-radius: 10px;
     color: white;
     text-align: center;
-    min-height: 20%;
-    .logo {
-        position: relative;
-        left: 0%;
-        top: 0%;
-        height: 70%;
+    min-height: 20;
+    .banner {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
     }
-    #title {
-        position: relative;
-        left: 0%;
-        top: 0%;
-    }
+}
+
+.Menu {
+    border: 1px solid gray;
+    border-radius: 10px;
+    min-height: 5;
 }
 
 .Container {
     height: 100%;
 }
-
-#Content {}
 
 html,
 body {
@@ -52,4 +50,9 @@ body {
 
 #home {
     height: auto;
+}
+
+.crearCliente {
+    border: 1px solid gray;
+    border-radius: 10px;
 }

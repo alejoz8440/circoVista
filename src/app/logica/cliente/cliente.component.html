@@ -1,3 +1,52 @@
-<p>
-  cliente works!
-</p>
+<div class="contCliente" fxFlexFill fxLayout="row">
+    <div class="crearCliente" fxFlex="30">
+        <mat-card class="Cliente-Card">
+            <mat-card-header>
+                <mat-card-title>Crear Cliente</mat-card-title>
+            </mat-card-header>
+            <div fxFlex="100">
+                <form>
+                    <mat-form-field>
+                        <input matInput placeholder="Nombre">
+                    </mat-form-field>
+                </form>
+                <form>
+                    <mat-form-field>
+                        <input matInput placeholder="Edad">
+                    </mat-form-field>
+                </form>
+                <form>
+                    <mat-form-field>
+                        <input matInput placeholder="Acudiente">
+                    </mat-form-field>
+                </form>
+            </div>
+        </mat-card>
+        <div>
+            <button mat-raised-button color="accent" (click)="agregarClientes()">Crear</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <div class="listaCliente" fxFlex="30">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Acudiente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clienteList">
+
+                    <td>{{cliente.nombre}}</td>
+                    <td>{{cliente.edad}}</td>
+                    <td>{{cliente.acudiente}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

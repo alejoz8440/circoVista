@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { LogicaModule } from './logica/logica.module';
 import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,7 +27,10 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     FlexLayoutModule,
     LogicaModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    FormsModule,
+    
     
   ],
   providers: [],

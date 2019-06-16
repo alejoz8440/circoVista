@@ -1,4 +1,4 @@
-export class cliente{
+export class Cliente{
     nombre: string;
     edad : Number;
     acudiente : string;

@@ -21,6 +21,6 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     
   ],
-  exports:[]
+  exports:[ClienteComponent]
 })
 export class LogicaModule { }
