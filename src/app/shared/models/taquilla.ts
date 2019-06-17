@@ -1,4 +1,4 @@
-export class taquilla{
+export class Taquilla{
     empleado:string;
     cliente:string;
     espectaculo:string;

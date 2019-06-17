@@ -1,3 +1,52 @@
-<p>
-  taquilla works!
-</p>
+<div class="conttaquilla" fxFlexFill fxLayout="row">
+    <div class="creartaquilla" fxFlex="30">
+        <mat-card class="taquilla-Card">
+            <mat-card-header>
+                <mat-card-title>Crear taquilla</mat-card-title>
+            </mat-card-header>
+            <div fxFlex="100">
+                <form>
+                    <mat-form-field>
+                        <input matInput placeholder="Cliente">
+                    </mat-form-field>
+                </form>
+                <form>
+                    <mat-form-field>
+                        <input matInput placeholder="Espectaculo">
+                    </mat-form-field>
+                </form>
+                <form>
+                    <mat-form-field>
+                        <input matInput placeholder="Precio">
+                    </mat-form-field>
+                </form>
+            </div>
+        </mat-card>
+        <div>
+            <button mat-raised-button color="accent" (click)="agregartaquillas()">Crear</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <div class="listataquilla" fxFlex="30">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Espectaculo</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let taquilla of taquillaList">
+
+                    <td>{{taquilla.cliente}}</td>
+                    <td>{{taquilla.espectaculo}}</td>
+                    <td>{{taquilla.precio}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

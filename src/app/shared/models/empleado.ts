@@ -1,4 +1,4 @@
-export class empleado{
+export class Empleado{
     nombre:string;
     cargo:string;
 }

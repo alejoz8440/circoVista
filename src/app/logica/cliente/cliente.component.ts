@@ -16,7 +16,7 @@ export class ClienteComponent implements OnInit {
   public title:string;
   public clientes:any;
   clienteList:Array<Cliente>;
-  p: number = 1;
+
 
   constructor(
     private _route: ActivatedRoute,

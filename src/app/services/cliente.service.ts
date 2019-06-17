@@ -9,15 +9,19 @@ import { Observable } from 'rxjs';
 })
 export class ClienteService {
 
+  public url:String;
+  clienteList:Array<Cliente>
   constructor(private httpClient: HttpClient) {
+    this.url=environment.backEndBaseURL;
   }
 
   addCliente(cliente: Cliente): Observable<Cliente> {
     return new Observable<Cliente>((observer) => {
-      this.httpClient.post(`${environment.backEndBaseURL+cliente}`, cliente)
+      this.httpClient.post(this.url+'cliente', cliente)
         .subscribe(
           (savedCliente: Cliente) => {
             observer.next(savedCliente);
+            console.log('lista de clientes ',this.clienteList);
           },
           (err: any) => {
             observer.error('Error guardando el Cliente');
@@ -28,7 +32,7 @@ export class ClienteService {
 
   getAllClientes(): Observable<Cliente[]> {
     return new Observable<Cliente[]>((observer) => {
-      this.httpClient.get(`${environment.backEndBaseURL}`+'clientes')
+      this.httpClient.get(this.url+'clientes')
         .subscribe(
           (clienteList: Cliente[]) => {
             observer.next(clienteList);

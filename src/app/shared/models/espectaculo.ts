@@ -1,5 +1,5 @@
-export class espectaculo{
+export class Espectaculo{
     dia:string;
     hora:string;
-    empleado:string;
+    
 }
