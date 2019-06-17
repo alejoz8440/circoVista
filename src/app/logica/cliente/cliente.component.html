@@ -38,12 +38,12 @@
                     <th scope="col">Acudiente</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr *ngFor="let cliente of clienteList">
+            <tbody *ngFor="let cliente of clienteList">
+                <tr>
 
                     <td>{{cliente.nombre}}</td>
                     <td>{{cliente.edad}}</td>
-                    <td>{{cliente.acudiente}}</td>
+                    <td>{{cliente.acudiente.nombre}}</td>
                 </tr>
 
             </tbody>

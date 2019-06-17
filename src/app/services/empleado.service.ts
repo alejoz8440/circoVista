@@ -12,6 +12,7 @@ export class EmpleadoService {
   public url:String;
   empleadoList:Array<Empleado>
   constructor(private httpClient: HttpClient) {
+    this.url=environment.backEndBaseURL;
   }
 
   addEmpleado(empleado: Empleado): Observable<Empleado> {

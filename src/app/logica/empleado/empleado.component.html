@@ -2,7 +2,7 @@
     <div class="crearEmplado" fxFlex="30">
         <mat-card class="emplado-Card">
             <mat-card-header>
-                <mat-card-title>Crear emplado</mat-card-title>
+                <mat-card-title>Crear empleado</mat-card-title>
             </mat-card-header>
             <div fxFlex="100">
                 <form>
@@ -19,7 +19,7 @@
             </div>
         </mat-card>
         <div>
-            <button mat-raised-button color="accent" (click)="agregarEmplados()">Crear</button>
+            <button mat-raised-button color="accent" (click)="agregarEmpleados()">Crear</button>
         </div>
     </div>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,11 +34,11 @@
 
                 </tr>
             </thead>
-            <tbody>
-                <tr *ngFor="let emplado of empladoList">
+            <tbody *ngFor="let empleado of empleadoList">
+                <tr>
 
-                    <td>{{emplado.nombre}}</td>
-                    <td>{{emplado.cargo}}</td>
+                    <td>{{empleado.nombre}}</td>
+                    <td>{{empleado.cargo}}</td>
 
                 </tr>
 

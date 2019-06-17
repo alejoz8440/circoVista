@@ -12,6 +12,7 @@ export class DulceriaService {
   public url:String;
   dulceriaList:Array<Dulceria>
   constructor(private httpClient: HttpClient) {
+    this.url=environment.backEndBaseURL;
   }
 
   addDulce(dulceria: Dulceria): Observable<Dulceria> {

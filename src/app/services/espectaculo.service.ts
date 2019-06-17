@@ -12,6 +12,7 @@ export class EspectaculoService {
   public url:String;
   espectaculoList:Array<Espectaculo>
   constructor(private httpClient: HttpClient) {
+    this.url=environment.backEndBaseURL;
   }
 
   addEspectaculo(espectaculo: Espectaculo): Observable<Espectaculo> {
