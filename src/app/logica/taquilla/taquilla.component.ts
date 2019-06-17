@@ -31,6 +31,7 @@ export class TaquillaComponent implements OnInit {
     this._taquillaService.getAllTaquilla().subscribe(
       (taquillaList: Taquilla[]) => {
         this.taquillaList = taquillaList ;
+        console.log(taquillaList);
       },
       () => {
         alert('Hubo un error al recuperar taquilla');

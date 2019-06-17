@@ -38,11 +38,11 @@
                     <th scope="col">Precio</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr *ngFor="let taquilla of taquillaList">
+            <tbody *ngFor="let taquilla of taquillaList">
+                <tr>
 
-                    <td>{{taquilla.cliente}}</td>
-                    <td>{{taquilla.espectaculo}}</td>
+                    <td>{{taquilla.cliente.nombre}}</td>
+                    <td>{{taquilla.espectaculo.hora}}</td>
                     <td>{{taquilla.precio}}</td>
                 </tr>
 
